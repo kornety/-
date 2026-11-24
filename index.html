@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f8fc" />
+  <title>Лайм — умный маркетинг ВКонтакте</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="Лайм — главная"><span class="brand-mark"><span></span><span></span><span></span></span><span>лайм<span class="brand-dot">.</span></span></a>
+      <div class="workspace"><div class="workspace-avatar">М</div><div class="workspace-copy"><strong>Мастерская кофе</strong><small>Рабочее пространство</small></div><span class="chevron">⌄</span></div>
+      <div class="nav-label">РАБОЧЕЕ</div>
+      <nav class="nav-list" aria-label="Главное меню">
+        <a class="nav-item active" href="#overview" data-page="overview"><span class="nav-icon">◫</span>Обзор <span class="nav-ping"></span></a>
+        <a class="nav-item" href="#campaigns" data-page="campaigns"><span class="nav-icon">◉</span>Кампании <span class="nav-count">4</span></a>
+        <a class="nav-item" href="#content" data-page="content"><span class="nav-icon">▤</span>Контент-план</a>
+        <a class="nav-item" href="#agents" data-page="agents"><span class="nav-icon">✳</span>Команда агентов <span class="agent-mini">4</span></a>
+        <a class="nav-item" href="#analytics" data-page="analytics"><span class="nav-icon">⌁</span>Аналитика</a>
+      </nav>
+      <div class="nav-label second-label">ИНСТРУМЕНТЫ</div>
+      <nav class="nav-list">
+        <a class="nav-item" href="#audience" data-page="audience"><span class="nav-icon">♧</span>Аудитория</a>
+        <a class="nav-item" href="#settings" data-page="settings"><span class="nav-icon">⚙</span>Настройки</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="plan-card"><div class="plan-top"><span class="plan-spark">✦</span><span>ВАШ ПРОГРЕСС</span><span class="plan-percent">72%</span></div><div class="progress-track"><span></span></div><p>Ещё немного — и план на месяц выполнен.</p><button class="text-button" id="planButton">Посмотреть план <span>→</span></button></div>
+        <div class="user-row"><div class="user-avatar">АК</div><div class="user-info"><strong>Алина Коваль</strong><small>Владелец проекта</small></div><button class="more-button" aria-label="Меню профиля">···</button></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar"><div class="breadcrumbs"><span>Рабочее пространство</span><b>/</b><strong id="crumbTitle">Обзор</strong></div><div class="top-actions"><span class="sync-status"><i></i>ВКонтакте подключён</span><button class="icon-button notification-button" aria-label="Уведомления">♧<i></i></button><div class="top-avatar">АК</div></div></header>
+      <div class="content-wrap">
+        <section class="welcome-row"><div><div class="eyebrow"><span class="eyebrow-line"></span>ВТОРНИК, 24 НОЯБРЯ 2026</div><h1>Доброе утро, Алина <span class="wave">✳</span></h1><p class="welcome-subtitle">Ваш маркетинг уже в движении. Вот что происходит сегодня.</p></div><div class="welcome-actions"><button class="button button-quiet" id="reportButton"><span class="download-icon">↓</span> Скачать отчёт</button><button class="button button-primary" id="createButton"><span>＋</span> Создать кампанию</button></div></section>
+
+        <section class="stats-grid" aria-label="Ключевые показатели">
+          <article class="stat-card"><div class="stat-head"><span>ОХВАТ ЗА МЕСЯЦ</span><span class="stat-symbol purple">◉</span></div><div class="stat-value">48 290</div><div class="stat-foot"><span class="trend positive">↗ 18,6%</span><span>к прошлому месяцу</span><div class="sparkline purple-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+          <article class="stat-card"><div class="stat-head"><span>ПЕРЕХОДЫ</span><span class="stat-symbol orange">↗</span></div><div class="stat-value">2 846</div><div class="stat-foot"><span class="trend positive">↗ 12,3%</span><span>к прошлому месяцу</span><div class="sparkline orange-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+          <article class="stat-card"><div class="stat-head"><span>НОВЫЕ ПОДПИСЧИКИ</span><span class="stat-symbol green">♧</span></div><div class="stat-value">+384</div><div class="stat-foot"><span class="trend positive">↗ 8,2%</span><span>к прошлому месяцу</span><div class="sparkline green-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+          <article class="stat-card"><div class="stat-head"><span>СТОИМОСТЬ ПОДПИСКИ</span><span class="stat-symbol blue">₽</span></div><div class="stat-value">42,8 ₽</div><div class="stat-foot"><span class="trend positive">↓ 6,4%</span><span>к прошлому месяцу</span><div class="sparkline blue-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+        </section>
+
+        <section class="middle-grid">
+          <article class="panel performance-panel"><div class="panel-heading"><div><h2>Эффективность продвижения</h2><p>Как аудитория взаимодействует с вашим контентом</p></div><button class="select-button" id="periodButton">Последние 30 дней <span>⌄</span></button></div><div class="chart-summary"><div><span class="chart-legend"><i class="legend-purple"></i>Охват</span><strong>48 290</strong></div><div><span class="chart-legend"><i class="legend-orange"></i>Переходы</span><strong>2 846</strong></div><span class="chart-note">+18,6% <span>за период</span></span></div><div class="chart-wrap"><div class="y-axis"><span>50к</span><span>40к</span><span>30к</span><span>20к</span><span>10к</span><span>0</span></div><div class="chart"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 760 205" preserveAspectRatio="none" class="chart-svg" aria-label="График охвата и переходов"><defs><linearGradient id="fillPurple" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#8e79f5" stop-opacity=".17"/><stop offset="1" stop-color="#8e79f5" stop-opacity="0"/></linearGradient></defs><path d="M0 156 C27 151 36 132 65 137 S105 144 130 119 S170 126 195 101 S231 109 260 90 S301 110 326 82 S365 91 391 69 S431 86 456 73 S497 92 522 59 S562 76 587 52 S626 66 652 37 S694 56 717 29 S744 42 760 14 L760 205 L0 205Z" fill="url(#fillPurple)"/><path d="M0 156 C27 151 36 132 65 137 S105 144 130 119 S170 126 195 101 S231 109 260 90 S301 110 326 82 S365 91 391 69 S431 86 456 73 S497 92 522 59 S562 76 587 52 S626 66 652 37 S694 56 717 29 S744 42 760 14" fill="none" stroke="#8974ed" stroke-width="3" vector-effect="non-scaling-stroke"/><path d="M0 181 C30 177 41 168 65 173 S107 171 130 159 S172 167 195 149 S237 155 260 140 S300 148 326 136 S366 143 391 125 S432 134 456 120 S497 130 522 112 S560 120 587 101 S624 112 652 91 S692 102 717 79 S744 89 760 70" fill="none" stroke="#f0a46b" stroke-width="2.5" stroke-dasharray="5 5" vector-effect="non-scaling-stroke"/></svg><div class="x-axis"><span>27 окт</span><span>1 ноя</span><span>6 ноя</span><span>11 ноя</span><span>16 ноя</span><span>21 ноя</span><span>24 ноя</span></div></div></div></article>
+          <article class="panel channels-panel"><div class="panel-heading"><div><h2>Откуда приходят</h2><p>Источники переходов</p></div><button class="dots-button" aria-label="Ещё">···</button></div><div class="donut-area"><div class="donut"><div class="donut-center"><strong>2 846</strong><span>переходов</span></div></div><div class="channel-legend"><div><i class="channel-dot dot-purple"></i><span>Посты сообщества</span><strong>46%</strong></div><div><i class="channel-dot dot-orange"></i><span>Реклама VK</span><strong>28%</strong></div><div><i class="channel-dot dot-yellow"></i><span>Репосты</span><strong>16%</strong></div><div><i class="channel-dot dot-gray"></i><span>Другое</span><strong>10%</strong></div></div></div><div class="channel-foot"><span class="tiny-check">✓</span>Лучший источник — органические посты</div></article>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="panel agents-panel"><div class="panel-heading"><div><div class="title-with-badge"><h2>Ваша команда агентов</h2><span class="live-badge"><i></i>В РАБОТЕ</span></div><p>Четыре специалиста, один общий результат</p></div><button class="dots-button" aria-label="Настройки агентов">···</button></div><div class="agents-list">
+            <div class="agent-row"><div class="agent-avatar agent-strategy">✳</div><div class="agent-description"><strong>Стратег</strong><span>Находит возможности для роста</span></div><div class="agent-task"><i></i>Анализирует аудиторию</div><button class="agent-menu" aria-label="Меню агента">···</button></div>
+            <div class="agent-row"><div class="agent-avatar agent-creative">✎</div><div class="agent-description"><strong>Креатор</strong><span>Создаёт посты, которые цепляют</span></div><div class="agent-task"><i></i>Готовит 3 идеи</div><button class="agent-menu" aria-label="Меню агента">···</button></div>
+            <div class="agent-row"><div class="agent-avatar agent-target">⌖</div><div class="agent-description"><strong>Таргетолог</strong><span>Находит вашу аудиторию в VK</span></div><div class="agent-task task-ready"><i></i>Кампания оптимальна</div><button class="agent-menu" aria-label="Меню агента">···</button></div>
+            <div class="agent-row"><div class="agent-avatar agent-analyst">⌁</div><div class="agent-description"><strong>Аналитик</strong><span>Следит за цифрами и результатом</span></div><div class="agent-task"><i></i>Обновил отчёт · 9:42</div><button class="agent-menu" aria-label="Меню агента">···</button></div>
+          </div><button class="all-agents" id="agentsButton">Управлять агентами <span>→</span></button></article>
+          <article class="panel activity-panel"><div class="panel-heading"><div><h2>На сегодня</h2><p>План и последние события</p></div><button class="calendar-button" id="calendarButton">24 ноя <span>▦</span></button></div><div class="activity-list"><div class="activity-item"><div class="activity-time">10:00</div><div class="activity-marker post-marker">↗</div><div class="activity-copy"><strong>Пост про зерно Эфиопии</strong><span>Публикация в сообществе</span></div><span class="activity-state state-scheduled">Запланирован</span></div><div class="activity-item"><div class="activity-time">11:30</div><div class="activity-marker insight-marker">✦</div><div class="activity-copy"><strong>Новая идея от Креатора</strong><span>«Как выбрать кофе для дома»</span></div><span class="activity-state state-review">На проверке</span></div><div class="activity-item"><div class="activity-time">14:00</div><div class="activity-marker ad-marker">◎</div><div class="activity-copy"><strong>Продвижение дегустации</strong><span>VK Реклама · 600 ₽ в день</span></div><span class="activity-state state-active">Активна</span></div><div class="activity-item"><div class="activity-time">16:00</div><div class="activity-marker report-marker">⌁</div><div class="activity-copy"><strong>Еженедельный отчёт</strong><span>Соберёт Аналитик</span></div><span class="activity-state state-later">Сегодня</span></div></div><button class="activity-footer" id="allActivityButton">Открыть календарь <span>→</span></button></article>
+        </section>
+        <footer class="footer-note"><span>✳</span> Лайм помогает расти — вы решаете, что публиковать. <a href="#settings">Правила автоматизации</a><span class="footer-right">Данные обновлены в 09:42</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"><span>✓</span><div><strong id="toastTitle">Готово</strong><small id="toastText">Действие выполнено</small></div><button id="toastClose" aria-label="Закрыть">×</button></div>
+  <div class="modal-backdrop" id="modalBackdrop"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Закрыть">×</button><div class="modal-kicker">ЛАЙМ · VK МАРКЕТИНГ</div><h2 id="modalTitle">Создать кампанию</h2><p id="modalDescription">Настройте цель — агенты предложат аудиторию, креативы и план продвижения.</p><form id="campaignForm"><label>Название кампании<input name="name" required placeholder="Например, Знакомство с новым меню"></label><label>Цель продвижения<select name="goal"><option>Привлечь подписчиков</option><option>Продать товар или услугу</option><option>Повысить охват публикации</option><option>Пригласить на событие</option></select></label><label>Бюджет на день<input name="budget" type="number" min="100" value="600" required></label><div class="modal-hint"><span>✦</span> Перед запуском вы сможете проверить и одобрить план агентов.</div><button class="button button-primary modal-submit" type="submit">Подготовить план <span>→</span></button></form></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
